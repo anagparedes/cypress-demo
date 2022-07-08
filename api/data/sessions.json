@@ -3672,6 +3672,13 @@
       "level": "Beginner",
       "day": "Friday",
       "id": "b34e036e-9cc2-497d-94cf-92f395a1e8cb"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "2c627051-8565-4eaa-87ad-b48a688b8976"
     }
   ]
 }

@@ -28,3 +28,9 @@
 Cypress.Commands.add('dataCy', value => {
   return cy.get(`[data-cy=${value}]`);
 });
+
+// Custom Command to click on View Sessions button on Conference page
+Cypress.Commands.add("clickViewSessions", () => {
+  cy.visit('/conference');
+  cy.get('h1').contains('View Sessions').click();
+});
