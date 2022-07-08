@@ -5,19 +5,25 @@ describe('Sessions page', () => {
     cy.visit('/conference');
     cy.get('h1').contains('View Sessions').click();
     cy.url().should('include', '/sessions');
+
+    // Define aliases here 
+    cy.get('[data-cy="AllSessions"]').as('allSessionsBtn');
+    cy.get('[data-cy="Wednesday"]').as('wednesdayBtn');
+    cy.get('[data-cy="Thursday"]').as('thursdayBtn');
+    cy.get('[data-cy="Friday"]').as('fridayBtn');
   });
 
   it('should navigate to conference sessions page and view day filter buttons', () => {
     // Validate that the buttons to filter by day exists.
-    cy.get('[data-cy="AllSessions"]');
-    cy.get('[data-cy="Wednesday"]');
-    cy.get('[data-cy="Thursday"]');
-    cy.get('[data-cy="Friday"]');
+    cy.get('@allSessionsBtn');
+    cy.get('@wednesdayBtn');
+    cy.get('@thursdayBtn');
+    cy.get('@fridayBtn');
   });
 
   it('should filter sessions and only display Wednesday session when Wednesday button is clicked', () => {
     // Validate that the buttons to filter by day exists.
-    cy.get('[data-cy="Wednesday"]').click();
+    cy.get('@wednesdayBtn').click();
 
     // Assertions
     cy.get('[data-cy=day]').contains('Wednesday').should('be.visible');
@@ -27,7 +33,7 @@ describe('Sessions page', () => {
 
   it('should filter sessions and only display Thursday session when Thursday button is clicked', () => {
     // Validate that the buttons to filter by day exists.
-    cy.get('[data-cy="Thursday"]').click();
+    cy.get('@thursdayBtn').click();
 
     // Assertions
     cy.get('[data-cy=day]').contains('Wednesday').should('not.exist');
@@ -37,7 +43,7 @@ describe('Sessions page', () => {
 
   it('should filter sessions and only display Friday session when Friday button is clicked', () => {
     // Validate that the buttons to filter by day exists.
-    cy.get('[data-cy="Friday"]').click();
+    cy.get('@fridayBtn').click();
 
     // Assertions
     cy.get('[data-cy=day]').contains('Wednesday').should('not.exist');
@@ -47,7 +53,7 @@ describe('Sessions page', () => {
 
   it('should show all sessions when All Sessions button is clicked', () => {
     // Validate that the buttons to filter by day exists.
-    cy.get('[data-cy="AllSessions"]').click();
+    cy.get('@allSessionsBtn').click();
 
     // Assertions
     cy.get('[data-cy=day]').contains('Wednesday').should('be.visible');
