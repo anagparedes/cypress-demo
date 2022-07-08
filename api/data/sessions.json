@@ -3630,6 +3630,48 @@
       "level": "Intermediate",
       "day": "Thursday",
       "id": "814b1f5e-e6df-440b-a91c-df198b5bbed2"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "9c8df45f-4d8c-46bb-a28f-2f5d61eeb289"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "4b4a3a35-3649-4df6-b103-f98a3c981011"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "9a761e04-3226-4d4d-8255-38ddefd99487"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "2f103644-f991-448c-aaf7-2ff54d370152"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "f9573a61-c42c-41b0-9b22-cbe9add3e53b"
+    },
+    {
+      "title": "New Session Title",
+      "description": "New Session Description",
+      "level": "Beginner",
+      "day": "Friday",
+      "id": "b34e036e-9cc2-497d-94cf-92f395a1e8cb"
     }
   ]
 }
